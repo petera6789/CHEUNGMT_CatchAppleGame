@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CLayout"
+    android:layout_width="410dp"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="520dp"
+        android:layout_height="769dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/forest" />
+
+    <TextView
+        android:id="@+id/Gameover"
+        android:layout_width="284dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="204dp"
+        android:text="Game Over"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Apple"
+        android:layout_width="65dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="221dp"
+        app:layout_constraintEnd_toStartOf="@+id/ScoreShow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/apple" />
+
+    <TextView
+        android:id="@+id/ScoreShow"
+        android:layout_width="97dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="19dp"
+        android:text="Score : 0"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Apple"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/BadApple"
+        android:layout_width="65dp"
+        android:layout_height="59dp"
+        app:layout_constraintStart_toEndOf="@+id/Apple"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bada" />
+
+    <TextView
+        android:id="@+id/Time"
+        android:layout_width="91dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ScoreShow" />
+
+    <Button
+        android:id="@+id/RetryBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="424dp"
+        android:onClick="reStart"
+        android:text="Retry"
+        app:layout_constraintBottom_toTopOf="@+id/BackBut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <Button
+        android:id="@+id/BackBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="504dp"
+        android:onClick="toMainScreen"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LastSco"
+        android:layout_width="284dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="276dp"
+        android:text="Your Score:"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Guy"
+        android:layout_width="86dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/man" />
+
+    <ImageView
+        android:id="@+id/Heart1"
+        android:layout_width="58dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/Heart2"
+        app:layout_constraintTop_toTopOf="@+id/Heart2"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/Heart3"
+        android:layout_width="58dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/Heart2"
+        android:layout_width="58dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/Heart3"
+        app:layout_constraintTop_toTopOf="@+id/Heart3"
+        app:srcCompat="@drawable/heart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
