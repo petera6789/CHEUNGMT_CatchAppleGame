@@ -16,10 +16,10 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="299dp"
-        android:layout_height="379dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="serif"
         android:text="This is a catch apple game that has three levels. Each level will increase the difficulty."
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"

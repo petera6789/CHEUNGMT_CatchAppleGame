@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/CLayout"
-    android:layout_width="410dp"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".GameActivity">
 
@@ -19,8 +19,8 @@
 
     <TextView
         android:id="@+id/Gameover"
-        android:layout_width="284dp"
-        android:layout_height="57dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
         android:layout_marginTop="204dp"
         android:text="Game Over"
@@ -41,66 +41,68 @@
 
     <TextView
         android:id="@+id/ScoreShow"
-        android:layout_width="97dp"
-        android:layout_height="21dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="19dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Score : 0"
+        android:textAlignment="textEnd"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Apple"
+        app:layout_constraintStart_toEndOf="@+id/BadApple"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/BadApple"
-        android:layout_width="65dp"
-        android:layout_height="59dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Apple"
+        app:layout_constraintEnd_toStartOf="@+id/ScoreShow"
         app:layout_constraintStart_toEndOf="@+id/Apple"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bada" />
 
     <TextView
         android:id="@+id/Time"
-        android:layout_width="91dp"
-        android:layout_height="58dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="28dp"
         android:text="00"
-        android:textAlignment="center"
+        android:textAlignment="textEnd"
         android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ScoreShow" />
 
     <Button
         android:id="@+id/RetryBut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="424dp"
+        android:layout_marginBottom="24dp"
         android:onClick="reStart"
         android:text="Retry"
         app:layout_constraintBottom_toTopOf="@+id/BackBut"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.187" />
+        app:layout_constraintEnd_toEndOf="@+id/BackBut"
+        app:layout_constraintStart_toStartOf="@+id/BackBut" />
 
     <Button
         android:id="@+id/BackBut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="504dp"
+        android:layout_marginBottom="179dp"
         android:onClick="toMainScreen"
         android:text="Back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/LastSco"
-        android:layout_width="284dp"
-        android:layout_height="57dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
         android:layout_marginTop="276dp"
         android:text="Your Score:"
