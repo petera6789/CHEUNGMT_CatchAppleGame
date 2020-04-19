@@ -232,7 +232,7 @@ public class GameActivity extends AppCompatActivity {
 
     public boolean onTouchEvent(MotionEvent me){
         if(me.getAction() == MotionEvent.ACTION_MOVE){
-            guyX = (int)me.getX();
+            guyX = (int)me.getX()-120;
         }
         return true;
     }
