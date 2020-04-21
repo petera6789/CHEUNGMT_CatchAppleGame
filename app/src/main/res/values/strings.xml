@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">CheungELab</string>
+    <string name="background">Background</string>
+    <string name="myphoto">MyPhoto</string>
+    <string name="have_fun">Have Fun!</string>
+    <string name="year_2019_2020">Year: 2019-2020</string>
+    <string name="game_over">Game Over</string>
+    <string name="score_0">Score : 0</string>
+    <string name="blueapple">blueApple</string>
+    <string name="_00">00</string>
+    <string name="retry">Retry</string>
+    <string name="back">Back</string>
+    <string name="your_score">Your Score:</string>
+    <string name="guy">Guy</string>
+    <string name="heart">heart</string>
+    <string name="bg">BG</string>
+    <string name="this_is_a_catch_apple_game_that_has_three_levels_each_level_will_increase_the_difficulty">This is a catch apple game that has three levels. Each level will increase the difficulty.</string>
+    <string name="redapple">RedApple</string>
+    <string name="_10">= 10</string>
+    <string name="equal_minor">= -</string>
+    <string name="badapple">BlueApple</string>
+    <string name="guideline">Guideline</string>
+    <string name="about_me">About Me</string>
+    <string name="start">Start</string>
+    <string name="wordapple">WordApple</string>
+    <string name="hand">hand</string>
 </resources>

@@ -15,7 +15,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/forest" />
+        app:srcCompat="@drawable/forest"
+        android:contentDescription="@string/bg" />
 
     <TextView
         android:id="@+id/Gameover"
@@ -23,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
         android:layout_marginTop="204dp"
-        android:text="Game Over"
+        android:text="@string/game_over"
         android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,14 +38,15 @@
         app:layout_constraintEnd_toStartOf="@+id/ScoreShow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/apple" />
+        app:srcCompat="@drawable/apple"
+        android:contentDescription="@string/redapple" />
 
     <TextView
         android:id="@+id/ScoreShow"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Score : 0"
+        android:text="@string/score_0"
         android:textAlignment="textEnd"
         android:textColor="#000000"
         android:textSize="18sp"
@@ -62,14 +64,15 @@
         app:layout_constraintStart_toEndOf="@+id/Apple"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bada" />
+        app:srcCompat="@drawable/bada"
+        android:contentDescription="@string/blueapple" />
 
     <TextView
         android:id="@+id/Time"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="00"
+        android:text="@string/_00"
         android:textAlignment="textEnd"
         android:textColor="#000000"
         android:textSize="30sp"
@@ -83,7 +86,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:onClick="reStart"
-        android:text="Retry"
+        android:text="@string/retry"
         app:layout_constraintBottom_toTopOf="@+id/BackBut"
         app:layout_constraintEnd_toEndOf="@+id/BackBut"
         app:layout_constraintStart_toStartOf="@+id/BackBut" />
@@ -94,7 +97,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="179dp"
         android:onClick="toMainScreen"
-        android:text="Back"
+        android:text="@string/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -105,7 +108,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
         android:layout_marginTop="276dp"
-        android:text="Your Score:"
+        android:text="@string/your_score"
         android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -117,7 +120,8 @@
         android:layout_height="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/man" />
+        app:srcCompat="@drawable/man"
+        android:contentDescription="@string/guy" />
 
     <ImageView
         android:id="@+id/Heart1"
@@ -125,7 +129,8 @@
         android:layout_height="40dp"
         app:layout_constraintEnd_toStartOf="@+id/Heart2"
         app:layout_constraintTop_toTopOf="@+id/Heart2"
-        app:srcCompat="@drawable/heart" />
+        app:srcCompat="@drawable/heart"
+        android:contentDescription="@string/heart" />
 
     <ImageView
         android:id="@+id/Heart3"
@@ -135,7 +140,9 @@
         android:layout_marginTop="68dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/heart" />
+        app:srcCompat="@drawable/heart"
+        android:contentDescription="@string/heart"
+         />
 
     <ImageView
         android:id="@+id/Heart2"
@@ -143,6 +150,7 @@
         android:layout_height="40dp"
         app:layout_constraintEnd_toStartOf="@+id/Heart3"
         app:layout_constraintTop_toTopOf="@+id/Heart3"
-        app:srcCompat="@drawable/heart" />
+        app:srcCompat="@drawable/heart"
+        android:contentDescription="@string/heart" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

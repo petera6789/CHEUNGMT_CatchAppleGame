@@ -12,7 +12,8 @@
         android:layout_height="791dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/leave" />
+        app:srcCompat="@drawable/leave"
+        android:contentDescription="@string/bg" />
 
     <TextView
         android:id="@+id/textView4"
@@ -21,7 +22,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="60dp"
         android:fontFamily="serif"
-        android:text="This is a catch apple game that has three levels. Each level will increase the difficulty."
+        android:text="@string/this_is_a_catch_apple_game_that_has_three_levels_each_level_will_increase_the_difficulty"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#000000"
         android:textSize="30sp"
@@ -39,14 +40,15 @@
         app:layout_constraintStart_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/apple" />
+        app:srcCompat="@drawable/apple"
+        android:contentDescription="@string/redapple" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:text="= 10 "
+        android:text="@string/_10"
         android:textSize="80sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
@@ -58,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="= -"
+        android:text="@string/equal_minor"
         android:textSize="80sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView7"
         app:layout_constraintStart_toEndOf="@+id/imageView7"
@@ -73,7 +75,8 @@
         android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:srcCompat="@drawable/bada" />
+        app:srcCompat="@drawable/bada"
+        android:contentDescription="@string/badapple" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -82,5 +85,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView7"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:srcCompat="@drawable/heart" />
+        app:srcCompat="@drawable/heart"
+        android:contentDescription="heart" />
 </androidx.constraintlayout.widget.ConstraintLayout>

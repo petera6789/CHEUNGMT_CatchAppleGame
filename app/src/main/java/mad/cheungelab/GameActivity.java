@@ -238,6 +238,7 @@ public class GameActivity extends AppCompatActivity {
     }
 
     public void toMainScreen(View view){
+        level = 1;
         startActivity(new Intent(this, MainActivity.class));
     }
     public void reStart(View view){

@@ -7,14 +7,14 @@ import android.os.Bundle;
 
 public class GuidelineActivity extends AppCompatActivity {
     MediaPlayer myMus = null;
-    protected void onResume(){ // callback method, when interacting with user
-        super.onResume(); // always call superclass
-        if (myMus != null) myMus.start(); // start playing
+    protected void onResume(){
+        super.onResume();
+        if (myMus != null) myMus.start();
     }
     @Override
-    protected void onPause(){ // callback method, inactive: when no interacting
-        super.onPause(); // always call superclass
-        if (myMus != null) myMus.pause(); // pause playing
+    protected void onPause(){
+        super.onPause();
+        if (myMus != null) myMus.pause();
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
